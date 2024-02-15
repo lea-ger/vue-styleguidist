@@ -6,7 +6,7 @@ const extendedParser = Parser.extend(jsx())
 
 export default function getAst(code: string): Node {
 	return extendedParser.parse(code, {
-		ecmaVersion: 2019,
+		ecmaVersion: 2022,
 		sourceType: 'module'
 	})
 }
